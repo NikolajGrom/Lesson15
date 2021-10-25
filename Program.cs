@@ -25,11 +25,7 @@ namespace Lesson15
         /*
         public static string WritingUserFile()
         {
-             string[] text =
-        {
-            "First line", "Second line", "Third line" 
-        };
-            return File.WriteAllTextAsync("WriteText.txt", text);
+       
         }
         */
 
