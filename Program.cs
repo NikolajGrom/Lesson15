@@ -76,7 +76,9 @@ namespace Lesson15
             Console.ReadLine();
         }
 
-        static void SaveUsers(List<User> users){
+
+        static void SaveUsers(List<User> users)
+        {
             foreach(User user in users){
                 File.AppendAllText("text.txt", user.ToString());
                 File.AppendAllText("text.txt", new string('=', 12));
@@ -89,7 +91,7 @@ namespace Lesson15
             List<User> users = new List<User>();
             string [] data = File.ReadAllLines(path_to_file);
 
-           for (int i = 0; i < data.Length; i++)
+           for (int i = 0; i < data.Length; i+=4)
            {
                if( i % 4 == 0 && data[i][0] != '\n')
                 {
